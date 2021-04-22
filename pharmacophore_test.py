@@ -1,4 +1,4 @@
-from pharmacophore import FakeLigandReader, merge_two_features, Feature, InteractionKind, maybe_merge_nearby_features
+from pharmacophore import fake2json, find_exclusion_features, FakeLigandReader, merge_two_features, Feature, InteractionKind, maybe_merge_nearby_features
 
 
 def test_merge_two_features():
@@ -46,8 +46,23 @@ def test_FakeLigandReader():
     assert isinstance(feat_list[0], Feature)
 
 
+def test_find_exclusion_spheres():
+
+    expected = Feature(InteractionKind.EXCLUSION, x=42.122, y=28.514, z=17.364, radius=1.7)
+    result = find_exclusion_features('examples/v2_3cqw_site.pdb')[3]
+    assert expected.x == result.x
+    assert expected.radius == expected.radius
+
+
+def test_fake2json():
+    fake2json('examples/3cqw/v2_3cqw_cutoff_50_rings.sdf', 'examples/3cqw/v2_3cqw_cutoff_50_donors_medchem.sdf',
+              'examples/3cqw/v2_3cqw_cutoff_50_acceptors_medchem.sdf', 'examples/v2_3cqw_site.pdb', 'examples/query.json')
+
+
 if __name__ == '__main__':
     test_merge_two_features()
     test_maybe_merge_nearby_features()
     test_FakeLigandReader()
+    test_find_exclusion_spheres()
+    test_fake2json()
     print('OK')

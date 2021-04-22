@@ -2,13 +2,23 @@ import json
 from dataclasses import dataclass
 from enum import Enum
 from math import sqrt
-from mypy import List
+from typing import List
+
+
+ELEMENT_RADII = {
+    'C': 1.70,
+    'O': 1.52,
+    'S': 1.80,
+    'N': 1.55,
+    'H': 1.20,
+}
 
 
 class InteractionKind(Enum):
     HYDROPHOBIC = 0
     DONOR = 1
     ACCEPTOR = 2
+    EXCLUSION = 3
 
 
 @dataclass
@@ -103,6 +113,18 @@ class PharmacophoreJsonWriter:
                 "radius": feat.radius,
                 "weight": feat.weight,
             }
+        elif feat.type == InteractionKind.EXCLUSION:
+            return {
+                "name": "ExclusionSphere",
+                "enabled": True,
+                "x": feat.x,
+                "y": feat.y,
+                "z": feat.z,
+                "radius": feat.radius,
+                "weight": feat.weight,
+            }
+        else:
+            raise Exception("Unexpected error")
 
     def write(self, features: [Feature], filename: str) -> None:
         with open(filename, 'w') as fp:
@@ -136,7 +158,7 @@ class FakeLigandReader:
         return features
 
 
-    def _read_sdf(self, filename: str, cluster_type: InteractionKind) -> [Cluster]:
+    def _read_sdf(self, filename: str, cluster_type: InteractionKind) -> List[Cluster]:
         clusters = []
         with open(filename) as file:
             lines = file.readlines()
@@ -210,6 +232,7 @@ class FakeLigandReader:
             )
 
 
+
 class Strategy:
 
     def run(feat: List[Feature]) -> List[Feature]:
@@ -218,13 +241,13 @@ class Strategy:
 
 class SimpleStrategy(Strategy):
 
-    def run(features: List[Feature], num_points: int = 5) -> List[Feature]:
-        return maybe_merge_nearby_features()[:num_points]
+    def run(feats: List[Feature], num_points: int = 5) -> List[Feature]:
+        return maybe_merge_nearby_features(feats)[:num_points]
 
 
 class Adjusted(Strategy):
 
-    def run(features: List[Feature],
+    def run(feats: List[Feature],
             num_points: int = 5,
             min_radius: float = 0,
             max_radius: float = 1
@@ -232,14 +255,41 @@ class Adjusted(Strategy):
         pass
 
 
+def find_exclusion_features(filename_site_pdb: str) -> List[Feature]:
+    feats: List[Feature] = []
+    with open(filename_site_pdb) as pdb_fp:
+        for line in pdb_fp:
+            if line.startswith('ATOM'):
+                elem = line[77:79]
+                radius = ELEMENT_RADII[elem.strip()]
+                feat = Feature(
+                    InteractionKind.EXCLUSION,
+                    x=float(line[31:39]),
+                    y=float(line[39:47]),
+                    z=float(line[47:55]),
+                    radius=radius
+                )
+                feats.append(feat)
+    return feats
 
-def fake2json(filename_rings: str, filename_donors: str, filename_acceptors: str, filename_output: str) -> None:
+
+def fake2json(
+    filename_rings: str,
+    filename_donors: str,
+    filename_acceptors: str,
+    filename_site_pdb: str,
+    filename_output: str,
+) -> None:
+
+
     reader = FakeLigandReader()
     feats = reader.read(filename_rings, filename_donors, filename_acceptors)
     new_feats = maybe_merge_nearby_features(feats)
     writer = PharmacophoreJsonWriter()
+    site = find_exclusion_features(filename_site_pdb)
 
     top_feats = list(sorted(new_feats, key=lambda f: f.weight))[:5]
     from pprint import pprint
-    pprint(top_feats)
-    writer.write(top_feats, filename_output)
+    all_feats = top_feats + site
+    pprint(all_feats)
+    writer.write(all_feats, filename_output)
