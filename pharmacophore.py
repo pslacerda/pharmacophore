@@ -8,8 +8,10 @@ from typing import List
 ELEMENT_RADII = {
     'C': 1.70,
     'O': 1.52,
+    'O1': 1.52,
     'S': 1.80,
     'N': 1.55,
+    'N1': 1.55,
     'H': 1.20,
 }
 
@@ -288,8 +290,11 @@ def fake2json(
     writer = PharmacophoreJsonWriter()
     site = find_exclusion_features(filename_site_pdb)
 
-    top_feats = list(sorted(new_feats, key=lambda f: f.weight))[:5]
+    top_feats = list(sorted(new_feats, key=lambda f: -f.weight))
     from pprint import pprint
     all_feats = top_feats + site
     pprint(all_feats)
     writer.write(all_feats, filename_output)
+
+# TODO distância máxima (8A) entre pontos
+# TODO filtrar pontos pelo DC
