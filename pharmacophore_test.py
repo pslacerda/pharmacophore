@@ -1,4 +1,5 @@
-from pharmacophore import fake2json, find_exclusion_features, FakeLigandReader, merge_two_features, Feature, InteractionKind, maybe_merge_nearby_features
+from pharmacophore import fake2json, find_exclusion_features, FakeLigandReader, merge_two_features, Feature, \
+    InteractionKind, maybe_merge_nearby_features, sort_features_by_density_correlation, read_pdb_atoms
 
 
 def test_merge_two_features():
@@ -25,7 +26,7 @@ def test_maybe_merge_nearby_features():
     ]
     equals = 0
     for feat1 in result:
-        for feat2 in result:
+        for feat2 in expected:
             if feat1 == feat2:
                 equals += 1
     assert equals == 2
@@ -53,16 +54,26 @@ def test_find_exclusion_spheres():
     assert expected.x == result.x
     assert expected.radius == expected.radius
 
+#
+# def test_fake2json():
+#     fake2json('examples/3cqw/v2_3cqw_cutoff_50_rings.sdf', 'examples/3cqw/v2_3cqw_cutoff_50_donors_medchem.sdf',
+#               'examples/3cqw/v2_3cqw_cutoff_50_acceptors_medchem.sdf', 'examples/v2_3cqw_site.pdb', 'examples/query.json')
+#
+def test_fake2json_2():
+    feats, site = fake2json('examples/fake_ligand/2azr_box/_rings.sdf',
+                      'examples/fake_ligand/2azr_box/_donors_medchem.sdf',
+                      'examples/fake_ligand/2azr_box/_acceptors_medchem.sdf',
+                      'examples/fake_ligand/2azr_box/active_site.pdb',
+                      'examples/fake_ligand/2azr_box/query.json',
+                      2.5)
+    assert len([f for f in feats if f.type != InteractionKind.EXCLUSION]) == 11
 
-def test_fake2json():
-    fake2json('examples/3cqw/v2_3cqw_cutoff_50_rings.sdf', 'examples/3cqw/v2_3cqw_cutoff_50_donors_medchem.sdf',
-              'examples/3cqw/v2_3cqw_cutoff_50_acceptors_medchem.sdf', 'examples/v2_3cqw_site.pdb', 'examples/query.json')
 
-
-if __name__ == '__main__':
-    test_merge_two_features()
-    test_maybe_merge_nearby_features()
-    test_FakeLigandReader()
-    test_find_exclusion_spheres()
-    test_fake2json()
-    print('OK')
+def test_sort_features_by_density_correlation():
+    feats, site = fake2json('examples/fake_ligand/2azr_box/_rings.sdf',
+                      'examples/fake_ligand/2azr_box/_donors_medchem.sdf',
+                      'examples/fake_ligand/2azr_box/_acceptors_medchem.sdf',
+                      'examples/fake_ligand/2azr_box/active_site.pdb',
+                      'examples/fake_ligand/2azr_box/D003.pdb',
+                      'examples/fake_ligand/2azr_box/query.json')
+    assert len(feats) == 18

@@ -1,0 +1,78 @@
+ACCEPTOR
+  ATLAS   
+
+  1  0  0  0  0  0  0  0  0  0  1 V2000
+   15.9877   12.3905    1.8269 O   0  0  0  0  0  0  0  0  0  0  0  0
+M  END
+> <CLUSTER_SIZE>
+497
+
+> <HB_ENERGY>
+-2.188983
+
+$$$$
+ACCEPTOR
+  ATLAS   
+
+  1  0  0  0  0  0  0  0  0  0  1 V2000
+    8.9097   12.6791    6.6581 O   0  0  0  0  0  0  0  0  0  0  0  0
+M  END
+> <CLUSTER_SIZE>
+605
+
+> <HB_ENERGY>
+-1.251197
+
+$$$$
+ACCEPTOR
+  ATLAS   
+
+  1  0  0  0  0  0  0  0  0  0  1 V2000
+   19.3866   19.1961    6.2369 O   0  0  0  0  0  0  0  0  0  0  0  0
+M  END
+> <CLUSTER_SIZE>
+138
+
+> <HB_ENERGY>
+-1.039431
+
+$$$$
+ACCEPTOR
+  ATLAS   
+
+  1  0  0  0  0  0  0  0  0  0  1 V2000
+    7.6334   15.5381    2.3960 O   0  0  0  0  0  0  0  0  0  0  0  0
+M  END
+> <CLUSTER_SIZE>
+433
+
+> <HB_ENERGY>
+-1.018373
+
+$$$$
+ACCEPTOR
+  ATLAS   
+
+  1  0  0  0  0  0  0  0  0  0  1 V2000
+    9.6968   14.8541    7.5527 O   0  0  0  0  0  0  0  0  0  0  0  0
+M  END
+> <CLUSTER_SIZE>
+53
+
+> <HB_ENERGY>
+-0.829762
+
+$$$$
+ACCEPTOR
+  ATLAS   
+
+  1  0  0  0  0  0  0  0  0  0  1 V2000
+    9.1480   14.5486    3.2836 O   0  0  0  0  0  0  0  0  0  0  0  0
+M  END
+> <CLUSTER_SIZE>
+129
+
+> <HB_ENERGY>
+-0.497048
+
+$$$$

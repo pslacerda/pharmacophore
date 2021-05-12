@@ -2,8 +2,7 @@ import json
 from dataclasses import dataclass
 from enum import Enum
 from math import sqrt
-from typing import List
-
+from typing import List, Union, Tuple
 
 ELEMENT_RADII = {
     'C': 1.70,
@@ -24,6 +23,14 @@ class InteractionKind(Enum):
 
 
 @dataclass
+class Atom:
+    x: float
+    y: float
+    z: float
+    elem: str
+
+
+@dataclass
 class Feature:
     type: InteractionKind
     x: float
@@ -32,20 +39,23 @@ class Feature:
     radius: float
     weight: float = 1
 
+    def __hash__(self):
+        return hash(f'{self.x}{self.y}{self.z}{self.type}')
 
-def distance(a: Feature, b: Feature) -> float:
-    return sqrt((b.x-a.x)**2 + (b.y-a.y)**2 + (b.z-a.z)**2)
+
+def distance(a: Union[Feature, Atom], b: Union[Feature, Atom]) -> float:
+    return sqrt((b.x - a.x) ** 2 + (b.y - a.y) ** 2 + (b.z - a.z) ** 2)
 
 
 def merge_two_features(a: Feature, b: Feature) -> Feature:
     assert a.type == b.type
     return Feature(
         type=a.type,
-        x=(a.x*a.weight + b.x*b.weight)/(a.weight+b.weight),
-        y=(a.y*a.weight + b.y*b.weight)/(a.weight+b.weight),
-        z=(a.z*a.weight + b.z*b.weight)/(a.weight+b.weight),
-        radius=(a.radius*a.weight + b.radius*b.weight)/(a.weight+b.weight),
-        weight=a.weight+b.weight,
+        x=(a.x * a.weight + b.x * b.weight) / (a.weight + b.weight),
+        y=(a.y * a.weight + b.y * b.weight) / (a.weight + b.weight),
+        z=(a.z * a.weight + b.z * b.weight) / (a.weight + b.weight),
+        radius=(a.radius * a.weight + b.radius * b.weight) / (a.weight + b.weight),
+        weight=a.weight + b.weight,
     )
 
 
@@ -88,7 +98,7 @@ class PharmacophoreJsonWriter:
         if feat.type == InteractionKind.HYDROPHOBIC:
             return {
                 "name": "Hydrophobic",
-                "enabled": True,
+                "enabled": False,
                 "x": feat.x,
                 "y": feat.y,
                 "z": feat.z,
@@ -98,7 +108,7 @@ class PharmacophoreJsonWriter:
         elif feat.type == InteractionKind.DONOR:
             return {
                 "name": "HydrogenDonor",
-                "enabled": True,
+                "enabled": False,
                 "x": feat.x,
                 "y": feat.y,
                 "z": feat.z,
@@ -108,7 +118,7 @@ class PharmacophoreJsonWriter:
         elif feat.type == InteractionKind.ACCEPTOR:
             return {
                 "name": "HydrogenAcceptor",
-                "enabled": True,
+                "enabled": False,
                 "x": feat.x,
                 "y": feat.y,
                 "z": feat.z,
@@ -158,7 +168,6 @@ class FakeLigandReader:
         for cluster in clusters:
             features.append(self._cluster_to_feature(cluster))
         return features
-
 
     def _read_sdf(self, filename: str, cluster_type: InteractionKind) -> List[Cluster]:
         clusters = []
@@ -234,29 +243,6 @@ class FakeLigandReader:
             )
 
 
-
-class Strategy:
-
-    def run(feat: List[Feature]) -> List[Feature]:
-        raise NotImplementedError
-
-
-class SimpleStrategy(Strategy):
-
-    def run(feats: List[Feature], num_points: int = 5) -> List[Feature]:
-        return maybe_merge_nearby_features(feats)[:num_points]
-
-
-class Adjusted(Strategy):
-
-    def run(feats: List[Feature],
-            num_points: int = 5,
-            min_radius: float = 0,
-            max_radius: float = 1
-    ) -> List[Feature]:
-        pass
-
-
 def find_exclusion_features(filename_site_pdb: str) -> List[Feature]:
     feats: List[Feature] = []
     with open(filename_site_pdb) as pdb_fp:
@@ -275,26 +261,60 @@ def find_exclusion_features(filename_site_pdb: str) -> List[Feature]:
     return feats
 
 
+def read_pdb_atoms(pdb_filename: str) -> List[Atom]:
+    atoms: List[Atom] = []
+    with open(pdb_filename) as pdb_fp:
+        for line in pdb_fp:
+            if line.startswith('ATOM') or line.startswith('HETATM'):
+                atom = Atom(
+                    x=float(line[31:39]),
+                    y=float(line[39:47]),
+                    z=float(line[47:55]),
+                    elem=line[77:79]
+                )
+                atoms.append(atom)
+    return atoms
+
+
+def sort_features_by_density_correlation(feats: List[Feature],
+                                         atoms: List[Atom],
+                                         threshold: 2.5):
+    points = {}
+    for feat in feats:
+        points[feat] = 0
+        for atom in atoms:
+            if atom.elem.startswith('H'):
+                continue
+            if distance(feat, atom) < threshold:
+                points[feat] += 1
+
+    return list(sorted(feats, key=lambda f: -points[f]))
+
+
 def fake2json(
-    filename_rings: str,
-    filename_donors: str,
-    filename_acceptors: str,
-    filename_site_pdb: str,
-    filename_output: str,
-) -> None:
-
-
+        filename_rings: str,
+        filename_donors: str,
+        filename_acceptors: str,
+        filename_site_pdb: str,
+        filename_hotspot: str,
+        filename_output: str,
+        merge_threshold=2,
+        density_correlation_threshold=2.5,
+) -> Tuple[List[Feature], List[Feature]]:
     reader = FakeLigandReader()
     feats = reader.read(filename_rings, filename_donors, filename_acceptors)
-    new_feats = maybe_merge_nearby_features(feats)
+
+    new_feats = maybe_merge_nearby_features(feats, merge_threshold)
+
+    hotspot = read_pdb_atoms(filename_hotspot)
+    new_feats = sort_features_by_density_correlation(new_feats, hotspot, density_correlation_threshold)
+
     writer = PharmacophoreJsonWriter()
     site = find_exclusion_features(filename_site_pdb)
 
     top_feats = list(sorted(new_feats, key=lambda f: -f.weight))
-    from pprint import pprint
     all_feats = top_feats + site
-    pprint(all_feats)
+
     writer.write(all_feats, filename_output)
 
-# TODO distância máxima (8A) entre pontos
-# TODO filtrar pontos pelo DC
+    return top_feats, site

@@ -1,3 +1,6 @@
 .vscode
 __pycache__
 venv
+.idea
+.mypy_cache
+*.cif

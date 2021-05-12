@@ -1,0 +1,1714 @@
+{
+  "points": [
+    {
+      "name": "Hydrophobic",
+      "enabled": false,
+      "x": 9.408999999999999,
+      "y": 13.71706,
+      "z": 5.79816,
+      "radius": 1,
+      "weight": 7750
+    },
+    {
+      "name": "Hydrophobic",
+      "enabled": false,
+      "x": 13.361279999999999,
+      "y": 13.497739999999999,
+      "z": 3.9657399999999994,
+      "radius": 1,
+      "weight": 3517
+    },
+    {
+      "name": "Hydrophobic",
+      "enabled": false,
+      "x": 10.089933333333333,
+      "y": 12.62395,
+      "z": 2.7124666666666664,
+      "radius": 1,
+      "weight": 1851
+    },
+    {
+      "name": "HydrogenDonor",
+      "enabled": false,
+      "x": 14.3206,
+      "y": 11.9996,
+      "z": 3.2729,
+      "radius": 1,
+      "weight": 1275
+    },
+    {
+      "name": "HydrogenDonor",
+      "enabled": false,
+      "x": 8.6396,
+      "y": 12.6123,
+      "z": 7.4509,
+      "radius": 1,
+      "weight": 1231
+    },
+    {
+      "name": "Hydrophobic",
+      "enabled": false,
+      "x": 11.227279999999999,
+      "y": 13.685880000000003,
+      "z": 4.4107,
+      "radius": 1,
+      "weight": 1222
+    },
+    {
+      "name": "HydrogenDonor",
+      "enabled": false,
+      "x": 11.870067180925664,
+      "y": 11.713795091164096,
+      "z": 2.182092005610098,
+      "radius": 1.0,
+      "weight": 713
+    },
+    {
+      "name": "HydrogenAcceptor",
+      "enabled": false,
+      "x": 8.9097,
+      "y": 12.6791,
+      "z": 6.6581,
+      "radius": 1,
+      "weight": 605
+    },
+    {
+      "name": "HydrogenDonor",
+      "enabled": false,
+      "x": 9.5401,
+      "y": 14.6597,
+      "z": 7.4668,
+      "radius": 1,
+      "weight": 529
+    },
+    {
+      "name": "HydrogenAcceptor",
+      "enabled": false,
+      "x": 15.9877,
+      "y": 12.3905,
+      "z": 1.8269,
+      "radius": 1,
+      "weight": 497
+    },
+    {
+      "name": "HydrogenAcceptor",
+      "enabled": false,
+      "x": 7.6334,
+      "y": 15.5381,
+      "z": 2.396,
+      "radius": 1,
+      "weight": 433
+    },
+    {
+      "name": "Hydrophobic",
+      "enabled": false,
+      "x": 7.840120000000001,
+      "y": 12.47152,
+      "z": 5.665000000000001,
+      "radius": 1,
+      "weight": 321
+    },
+    {
+      "name": "Hydrophobic",
+      "enabled": false,
+      "x": 6.284325000000001,
+      "y": 10.987,
+      "z": 5.387500000000001,
+      "radius": 1,
+      "weight": 176
+    },
+    {
+      "name": "Hydrophobic",
+      "enabled": false,
+      "x": 9.02304,
+      "y": 11.077279999999998,
+      "z": 0.5349999999999999,
+      "radius": 1,
+      "weight": 139
+    },
+    {
+      "name": "HydrogenAcceptor",
+      "enabled": false,
+      "x": 19.3866,
+      "y": 19.1961,
+      "z": 6.2369,
+      "radius": 1,
+      "weight": 138
+    },
+    {
+      "name": "HydrogenAcceptor",
+      "enabled": false,
+      "x": 9.148,
+      "y": 14.5486,
+      "z": 3.2836,
+      "radius": 1,
+      "weight": 129
+    },
+    {
+      "name": "HydrogenDonor",
+      "enabled": false,
+      "x": 11.2894,
+      "y": 13.5672,
+      "z": 6.7266,
+      "radius": 1,
+      "weight": 94
+    },
+    {
+      "name": "HydrogenDonor",
+      "enabled": false,
+      "x": 6.6157,
+      "y": 11.2377,
+      "z": 6.4382,
+      "radius": 1,
+      "weight": 69
+    },
+    {
+      "name": "Hydrophobic",
+      "enabled": false,
+      "x": 15.93194,
+      "y": 15.386280000000003,
+      "z": 4.68594,
+      "radius": 1,
+      "weight": 55
+    },
+    {
+      "name": "HydrogenAcceptor",
+      "enabled": false,
+      "x": 9.6968,
+      "y": 14.8541,
+      "z": 7.5527,
+      "radius": 1,
+      "weight": 53
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.627,
+      "y": 17.795,
+      "z": 1.723,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.387,
+      "y": 18.205,
+      "z": 3.164,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.852,
+      "y": 16.893,
+      "z": 1.724,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.195,
+      "y": 16.072,
+      "z": 0.488,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 13.53,
+      "y": 15.377,
+      "z": 0.644,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.047,
+      "y": 15.07,
+      "z": 0.257,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 9.504,
+      "y": 17.487,
+      "z": 3.832,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 9.283,
+      "y": 17.667,
+      "z": 5.261,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 8.975,
+      "y": 16.802,
+      "z": 3.331,
+      "radius": 1.2,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 8.621,
+      "y": 17.044,
+      "z": 9.211,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 14.626,
+      "y": 19.311,
+      "z": 7.172,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 13.928,
+      "y": 18.116,
+      "z": 7.81,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.862,
+      "y": 17.501,
+      "z": 7.191,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 14.368,
+      "y": 17.614,
+      "z": 9.007,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.229,
+      "y": 16.396,
+      "z": 7.778,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 13.773,
+      "y": 16.538,
+      "z": 9.597,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.682,
+      "y": 15.92,
+      "z": 8.989,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.052,
+      "y": 14.802,
+      "z": 9.587,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.141,
+      "y": 14.871,
+      "z": 10.527,
+      "radius": 1.2,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 15.587,
+      "y": 19.757,
+      "z": 2.715,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 15.951,
+      "y": 18.388,
+      "z": 2.159,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 16.605,
+      "y": 20.146,
+      "z": 3.761,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 18.974,
+      "y": 16.418,
+      "z": -1.611,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 17.811,
+      "y": 14.885,
+      "z": 0.052,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 18.452,
+      "y": 17.617,
+      "z": -1.656,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 18.853,
+      "y": 19.897,
+      "z": -0.847,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 19.843,
+      "y": 20.409,
+      "z": -0.113,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 20.212,
+      "y": 21.256,
+      "z": 2.149,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 20.771,
+      "y": 20.061,
+      "z": -0.183,
+      "radius": 1.2,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 21.755,
+      "y": 11.96,
+      "z": 4.264,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 24.836,
+      "y": 18.981,
+      "z": 1.805,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 22.874,
+      "y": 15.31,
+      "z": 1.747,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 21.047,
+      "y": 13.922,
+      "z": 1.304,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 20.72,
+      "y": 14.762,
+      "z": 1.007,
+      "radius": 1.2,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 19.742,
+      "y": 11.508,
+      "z": 0.651,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 17.553,
+      "y": 10.317,
+      "z": -0.594,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 17.053,
+      "y": 9.13,
+      "z": 0.186,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 15.257,
+      "y": 10.662,
+      "z": -1.61,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 14.777,
+      "y": 11.842,
+      "z": -1.07,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 14.342,
+      "y": 9.685,
+      "z": -2.006,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 13.405,
+      "y": 12.025,
+      "z": -0.902,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.99,
+      "y": 9.869,
+      "z": -1.812,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.537,
+      "y": 11.045,
+      "z": -1.26,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 16.459,
+      "y": 9.406,
+      "z": 1.323,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 15.837,
+      "y": 8.365,
+      "z": 2.105,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 14.342,
+      "y": 8.335,
+      "z": 1.736,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 13.639,
+      "y": 9.303,
+      "z": 1.95,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 16.027,
+      "y": 8.699,
+      "z": 3.591,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 17.49,
+      "y": 8.736,
+      "z": 3.995,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 16.349,
+      "y": 10.364,
+      "z": 1.588,
+      "radius": 1.2,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 13.84,
+      "y": 7.207,
+      "z": 1.246,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.561,
+      "y": 7.162,
+      "z": 0.595,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.336,
+      "y": 7.341,
+      "z": 1.451,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.314,
+      "y": 7.846,
+      "z": 0.963,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.397,
+      "y": 6.915,
+      "z": 2.725,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.142,
+      "y": 7.026,
+      "z": 3.48,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 9.843,
+      "y": 8.418,
+      "z": 4.021,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 8.743,
+      "y": 8.943,
+      "z": 3.903,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.888,
+      "y": 8.965,
+      "z": 4.656,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.717,
+      "y": 10.164,
+      "z": 5.447,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.242,
+      "y": 9.847,
+      "z": 6.852,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.141,
+      "y": 9.023,
+      "z": 6.996,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.774,
+      "y": 8.502,
+      "z": 4.631,
+      "radius": 1.2,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.694,
+      "y": 10.499,
+      "z": 7.89,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.29,
+      "y": 10.396,
+      "z": 9.234,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.281,
+      "y": 11.718,
+      "z": 9.992,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 9.936,
+      "y": 12.129,
+      "z": 10.479,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 9.627,
+      "y": 13.404,
+      "z": 10.303,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 9.204,
+      "y": 11.342,
+      "z": 11.089,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 9.891,
+      "y": 11.073,
+      "z": 7.73,
+      "radius": 1.2,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.218,
+      "y": 14.016,
+      "z": 9.779,
+      "radius": 1.2,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 8.778,
+      "y": 13.775,
+      "z": 10.681,
+      "radius": 1.2,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 5.842,
+      "y": 11.572,
+      "z": 10.073,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 6.369,
+      "y": 12.435,
+      "z": 9.332,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 15.89,
+      "y": 11.395,
+      "z": 7.524,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 16.836,
+      "y": 12.172,
+      "z": 6.623,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 14.529,
+      "y": 11.841,
+      "z": 7.241,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 20.285,
+      "y": 13.046,
+      "z": 9.932,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 21.514,
+      "y": 13.742,
+      "z": 10.497,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 19.06,
+      "y": 13.92,
+      "z": 9.957,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 22.368,
+      "y": 14.236,
+      "z": 9.606,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 23.917,
+      "y": 14.002,
+      "z": 7.426,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 22.136,
+      "y": 14.199,
+      "z": 8.634,
+      "radius": 1.2,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 22.728,
+      "y": 16.955,
+      "z": 9.549,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 19.313,
+      "y": 17.756,
+      "z": 9.042,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 18.141,
+      "y": 17.253,
+      "z": 9.603,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 21.854,
+      "y": 16.473,
+      "z": 9.514,
+      "radius": 1.2,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.627,
+      "y": 17.795,
+      "z": 1.723,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.387,
+      "y": 18.205,
+      "z": 3.164,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.852,
+      "y": 16.893,
+      "z": 1.724,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.195,
+      "y": 16.072,
+      "z": 0.488,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 13.53,
+      "y": 15.377,
+      "z": 0.644,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.047,
+      "y": 15.07,
+      "z": 0.257,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 9.504,
+      "y": 17.487,
+      "z": 3.832,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 9.283,
+      "y": 17.667,
+      "z": 5.261,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 8.621,
+      "y": 17.044,
+      "z": 9.211,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 14.626,
+      "y": 19.311,
+      "z": 7.172,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 13.928,
+      "y": 18.116,
+      "z": 7.81,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.862,
+      "y": 17.501,
+      "z": 7.191,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 14.368,
+      "y": 17.614,
+      "z": 9.007,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.229,
+      "y": 16.396,
+      "z": 7.778,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 13.773,
+      "y": 16.538,
+      "z": 9.597,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.682,
+      "y": 15.92,
+      "z": 8.989,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.052,
+      "y": 14.802,
+      "z": 9.587,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 15.587,
+      "y": 19.757,
+      "z": 2.715,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 15.951,
+      "y": 18.388,
+      "z": 2.159,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 16.605,
+      "y": 20.146,
+      "z": 3.761,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 18.974,
+      "y": 16.418,
+      "z": -1.611,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 17.811,
+      "y": 14.885,
+      "z": 0.052,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 18.452,
+      "y": 17.617,
+      "z": -1.656,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 18.853,
+      "y": 19.897,
+      "z": -0.847,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 19.843,
+      "y": 20.409,
+      "z": -0.113,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 20.212,
+      "y": 21.256,
+      "z": 2.149,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 25.613,
+      "y": 17.401,
+      "z": 5.434,
+      "radius": 1.8,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 25.516,
+      "y": 15.253,
+      "z": 4.69,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 25.393,
+      "y": 15.561,
+      "z": 4.991,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 21.755,
+      "y": 11.96,
+      "z": 4.264,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 24.836,
+      "y": 18.981,
+      "z": 1.805,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 22.874,
+      "y": 15.31,
+      "z": 1.747,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 21.047,
+      "y": 13.922,
+      "z": 1.304,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 19.742,
+      "y": 11.508,
+      "z": 0.651,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 17.553,
+      "y": 10.317,
+      "z": -0.594,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 17.053,
+      "y": 9.13,
+      "z": 0.186,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 15.257,
+      "y": 10.662,
+      "z": -1.61,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 14.777,
+      "y": 11.842,
+      "z": -1.07,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 14.342,
+      "y": 9.685,
+      "z": -2.006,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 13.405,
+      "y": 12.025,
+      "z": -0.902,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.99,
+      "y": 9.869,
+      "z": -1.812,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.537,
+      "y": 11.045,
+      "z": -1.26,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 16.459,
+      "y": 9.406,
+      "z": 1.323,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 15.837,
+      "y": 8.365,
+      "z": 2.105,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 14.342,
+      "y": 8.335,
+      "z": 1.736,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 13.639,
+      "y": 9.303,
+      "z": 1.95,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 16.027,
+      "y": 8.699,
+      "z": 3.591,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 17.49,
+      "y": 8.736,
+      "z": 3.995,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 13.84,
+      "y": 7.207,
+      "z": 1.246,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.561,
+      "y": 7.162,
+      "z": 0.595,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.336,
+      "y": 7.341,
+      "z": 1.451,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.314,
+      "y": 7.846,
+      "z": 0.963,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.368,
+      "y": 6.915,
+      "z": 2.723,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.416,
+      "y": 6.992,
+      "z": 2.713,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.13,
+      "y": 6.979,
+      "z": 3.51,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.226,
+      "y": 6.911,
+      "z": 3.522,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 9.847,
+      "y": 8.332,
+      "z": 4.135,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 9.858,
+      "y": 8.224,
+      "z": 4.315,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 8.692,
+      "y": 8.851,
+      "z": 3.985,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 8.671,
+      "y": 8.537,
+      "z": 4.581,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.888,
+      "y": 8.965,
+      "z": 4.656,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.717,
+      "y": 10.164,
+      "z": 5.447,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.242,
+      "y": 9.847,
+      "z": 6.852,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 12.141,
+      "y": 9.023,
+      "z": 6.996,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 10.694,
+      "y": 10.499,
+      "z": 7.89,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.29,
+      "y": 10.396,
+      "z": 9.234,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 11.281,
+      "y": 11.718,
+      "z": 9.992,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 9.936,
+      "y": 12.129,
+      "z": 10.479,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 9.627,
+      "y": 13.404,
+      "z": 10.303,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 9.204,
+      "y": 11.342,
+      "z": 11.089,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 5.842,
+      "y": 11.572,
+      "z": 10.073,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 6.369,
+      "y": 12.435,
+      "z": 9.332,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 15.89,
+      "y": 11.395,
+      "z": 7.524,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 16.836,
+      "y": 12.172,
+      "z": 6.623,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 14.529,
+      "y": 11.841,
+      "z": 7.241,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 20.285,
+      "y": 13.046,
+      "z": 9.932,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 21.514,
+      "y": 13.742,
+      "z": 10.497,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 19.06,
+      "y": 13.92,
+      "z": 9.957,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 22.368,
+      "y": 14.236,
+      "z": 9.606,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 23.917,
+      "y": 14.002,
+      "z": 7.426,
+      "radius": 1.52,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 22.728,
+      "y": 16.955,
+      "z": 9.549,
+      "radius": 1.55,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 19.313,
+      "y": 17.756,
+      "z": 9.042,
+      "radius": 1.7,
+      "weight": 1
+    },
+    {
+      "name": "ExclusionSphere",
+      "enabled": true,
+      "x": 18.141,
+      "y": 17.253,
+      "z": 9.603,
+      "radius": 1.7,
+      "weight": 1
+    }
+  ]
+}
